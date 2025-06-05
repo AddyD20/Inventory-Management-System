@@ -1,0 +1,143 @@
+body, .dairy-root {
+  background-color: #FFE3E1;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.alert {
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+.alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert.error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+/* Navbar style */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFCCD2;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px;
+  font-family: "Concert One", sans-serif;
+  padding: 18px;
+  margin-right: 20px;
+  color: #921A40;
+}
+
+.nav-link {
+  color: #921A40 !important;
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #FFCCD2;
+}
+
+.navbar-heading {
+  margin: 0;
+  font-size: 36px;
+  font-family: "Concert One", sans-serif;
+  color: #921A40;
+  text-align: center;
+  flex-grow: 1.5;
+  margin-right: 20px;
+  margin-left: 150px;
+}
+
+/* For spacing below navbar */
+.dairy-root {
+  padding-top: 50px;
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 350px;         /* Use height, not just max-height */
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #FFF5E4;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.card-image {
+  flex: 1 1 50%;
+  background-color: #FFE3E1;
+  display: flex;
+  align-items: stretch;  /* Ensures child stretches full height */
+  justify-content: center;
+  height: 100%;          /* Fills card height */
+  min-width: 0;
+}
+
+.card-img-side {
+  width: 100%;
+  height: 100%;          /* Fills parent height */
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+
+.card-form {
+  flex: 1 1 60%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Responsive: stack vertically on small screens */
+  @media (max-width: 768px) {
+  .card-horizontal {
+    flex-direction: column;
+    width: 95vw;
+    height: auto;
+    min-height: unset;
+  }
+  .card-image {
+    height: 180px;
+    min-width: 100%;
+  }
+  .card-img-side {
+    height: 180px;
+    max-height: 180px;
+  }
+}
+

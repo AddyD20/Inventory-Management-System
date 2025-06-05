@@ -1,0 +1,58 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F4D9D0;
+  z-index: 1;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.homecake-img {
+  border-radius: 500px;
+  border: 10px solid #921A40;
+}
+
+#hero {
+  font-family: "Concert One", sans-serif;
+  color: #921A40;
+}
+
+.lead {
+  font-style: oblique;
+}
+
+.reservation-button {
+  background-color: #921A40;
+  transition: background-color 0.2s;
+}
+
+.reservation-button:hover {
+  background-color: #C75B7A !important;
+}
+
+@media screen and (min-width: 768px) {
+  .container.col-xxl-8.px-4.py-5 {
+    align-items: flex-start;
+  }
+}
+
+.CustomGap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
