@@ -1,5 +1,13 @@
 {
+  "name": "inventory-management-system",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix view start\""
+  },
   "dependencies": {
     "mongodb": "^6.17.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
