@@ -26,7 +26,7 @@ const Homepage = () => {
           </div>
           <div className="col-lg-6">
             <h1 className="display-5 fw-bold lh-1 mb-3" id="hero">
-              The Midnight Cafe Manage your inventory with ease
+              EasyManage helps you manage your inventory with ease
             </h1>
             <p className="lead">
               Efficiently track and manage your cafe's inventory with our user-friendly system. Easily view stock levels, stock expiry, and marketting oversights. Check the reservations and bookings and be ready for your guests!!
@@ -42,7 +42,7 @@ const Homepage = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                Check Reservation
+                Let's Manage
               </button>
             </div>
           </div>
