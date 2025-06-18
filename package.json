@@ -5,7 +5,8 @@
     "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix view start\""
   },
   "dependencies": {
-    "mongodb": "^6.17.0"
+    "mongodb": "^6.17.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
